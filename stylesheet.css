@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    text-align: right;
+}
+
+.topbar {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0072BC;
+    padding: 2px 5px 5px 5px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.topbar a {
+    padding-right: 5px;
+    padding-left: 10px;
+    text-decoration: none;
+    border-right: 1px solid black;
+}
+
+.topbar i {
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.topbar a:hover {
+    text-decoration: underline;
+}
+
+.dseu-logo {
+    margin-top: 5px;
+    margin-left: -60px;
+    width: 350px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dropbtn {
+    background-color: none;
+    color: #0072BC;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.dropbtn i {
+    color: orangered;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: none;
+    background-color: white;
+    text-align: left;
+    padding: 10px 16px;
+    min-width: 200px;
+    z-index: 100;
+}
+
+.dropdown-content a {
+    color: #0072BC;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: orangered;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdown:hover .dropbtn {
+    color: orangered;
+}
+
+.img-gnd {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.img-gnd img{
+    width: 100%;
+}
+
+.container {
+    padding: 10px;
+}
+
+.vertical-drop {
+    display: flex;
+    flex-direction: column;
+    background-color: #EBEBEB;
+    width: 100%;
+}
+
+.vertical-drop a {
+    border-bottom: 1px solid black;
+    padding-left: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    outline: none;
+    display: block;
+    font-size: 14px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+
+.vertical-drop a:hover {
+    background-color: #afa8a8;
+}
+
+.format {
+    background-color: grey;
+}
+
+.content {
+    width: 50vw;
+    padding: 20px;
+    text-align: justify;
+}
+
+section {
+    display: none;
+}
+
+section:target {
+    display: block;
+}
+
+section i {
+    color: blue;
+}
+
+.director {
+    color: blue;
+    padding-bottom: 10px;
+}
+
+.activitydaysimages img {
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.campuscelebrationimages img {
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.industrialvisits img {
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.campushighlights img {
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+#locations span {
+    color: grey;
+    font-weight: 700;
+}
+
+#locations p {
+    color: grey;
+}
+
+#locations a {
+    color: orangered;
+    text-decoration: none;
+}
+
+.right-bar {
+    display: flex;
+    flex-direction: column;
+    background-color: #EBEBEB;
+    width: 15vw;
+    padding-right: 10px;
+}
+
+.right-bar h4 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.right-bar a {
+    text-decoration: none;
+    color: #093E69;
+    font-weight: 500;
+}
+
+.right-bar ul {
+    list-style-type: none;
+}
+
+.right-bar li {
+    padding-bottom: 10px;
+}
+
+.right-bar a:hover {
+    color: orangered;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #093E69;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.copyright {
+    flex: 1;
+}
+
+.linksfooter {
+    flex: 1;
+    text-align: right;
+}
+
+.linksfooter ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+.linksfooter ul li {
+    display: inline;
+    margin-right: 10px;
+    border-right: 1px solid white;
+    padding-right: 2%;
+}
+
+.linksfooter ul li:last-child {
+    margin-right: 0;
+}
+
+.linksfooter a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.linksfooter a:hover {
+    text-decoration: underline;
+}

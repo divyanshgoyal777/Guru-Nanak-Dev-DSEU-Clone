@@ -1,0 +1,100 @@
+.topbar{
+    font-size: 8px;
+    padding: 0 5px;
+    white-space: nowrap;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.dseu-logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+}
+
+nav {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.dropdown {
+    position: static;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.dropbtn {
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown-content {
+    display: none;
+    position: static;
+    background-color: white;
+    text-align: left;
+    padding: 10px 16px;
+    width: auto;
+    z-index: 100;
+}
+
+.dropdown-content a {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdown:hover .dropbtn {
+    color: #0072BC;
+}
+
+
+.img-gnd{
+    width: 100vw;
+}
+
+.right-bar {
+    width: 90vw;
+}
+
+footer{
+    width: 100%;
+}
+
+.linksfooter ul li{
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 7px;
+    border-right: none;
+    padding-right: none;
+    margin-right:  0;
+    text-align: right;
+}
+
+.about-video{
+    width: 170px;
+    height: 100px;
+}
