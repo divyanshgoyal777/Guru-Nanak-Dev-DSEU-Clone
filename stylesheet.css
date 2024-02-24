@@ -8,6 +8,17 @@ html {
 
 nav {
     text-align: right;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger i {
+    color: orangered;
+    font-size: 1.4rem;
+    margin-left: 10px;
 }
 
 .topbar {
@@ -22,8 +33,7 @@ nav {
 }
 
 .topbar a {
-    padding-right: 5px;
-    padding-left: 10px;
+    padding: 0 5px 0 10px;
     text-decoration: none;
     border-right: 1px solid black;
 }
@@ -35,6 +45,7 @@ nav {
 
 .topbar a:hover {
     text-decoration: underline;
+    color: #003f69;
 }
 
 .dseu-logo {
@@ -56,6 +67,15 @@ nav {
     cursor: pointer;
 }
 
+.admission a{
+    background-color: none;
+    color: #0072BC;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .dropbtn i {
     color: orangered;
 }
@@ -75,21 +95,25 @@ nav {
     padding: 10px 16px;
     min-width: 200px;
     z-index: 100;
+    border: 1px solid black;
 }
 
 .dropdown-content a {
     color: #0072BC;
     text-decoration: none;
     display: block;
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid rgba(212, 211, 211, 0.904);
 }
 
 .dropdown-content a:hover {
     color: orangered;
+    font-weight: 500;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-    animation: fadeIn 0.5s ease-in-out;
+    animation: fadeIn 0.6s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -114,7 +138,7 @@ nav {
     width: 100%;
 }
 
-.img-gnd img{
+.img-gnd img {
     width: 100%;
 }
 
@@ -130,7 +154,7 @@ nav {
 }
 
 .vertical-drop a {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid #8a8585;
     padding-left: 16px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -144,7 +168,11 @@ nav {
 }
 
 .vertical-drop a:hover {
-    background-color: #afa8a8;
+    background-color: #8a8585;
+}
+
+.clicked {
+    background-color: #8a8585;
 }
 
 .format {
@@ -155,14 +183,6 @@ nav {
     width: 50vw;
     padding: 20px;
     text-align: justify;
-}
-
-section {
-    display: none;
-}
-
-section:target {
-    display: block;
 }
 
 section i {
@@ -212,8 +232,7 @@ section i {
     display: flex;
     flex-direction: column;
     background-color: #EBEBEB;
-    width: 15vw;
-    padding-right: 10px;
+    padding: 5px;
 }
 
 .right-bar h4 {
